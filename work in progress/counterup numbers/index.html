@@ -45,7 +45,7 @@
         </div>
         <div class="box">
             <div class="icon"><i class="fas fa-award"></i></div>
-            <div class="counter">120</div>
+            <div class="counter"data-suffix="K">120</div>
             <div class="text">Awards Received</div>
         </div>
         <div class="box">
@@ -57,12 +57,27 @@
   </div>
 
   <script>
-  $(document).ready(function(){
-    $('.counter').counterUp({
-      delay: 10,
-      time: 1200
+    $(document).ready(function(){
+        $('.counter').each(function(){
+            var $this = $(this);
+            $this.prop('counter', 0).animate({
+                counter: $this.text()
+            }, {
+                duration: 1200,
+                easing: 'swing',
+                step: function(now){
+                    $this.text(Math.ceil(now));
+                },
+                complete: function(){
+                    var suffix = $this.data('suffix');
+                    if(suffix){
+                        $this.text($this.text() + suffix);
+                    }
+                }
+            });
+        });
     });
-  });
+
   </script>
 
 </body>
