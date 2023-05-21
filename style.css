@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@100;200;300;400;500;600;700;900");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #111222;
+}
+
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px ;
+    color: #fff;
+}
+
+.container{
+    color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-title{
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+
+.content{
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .image{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.content .image img{
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.content .text-box{
+    z-index: 222;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 400px;
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    transform: translate(-80px, 50px);
+}
+
+.content .text-box h3{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.media-icons{
+    margin-top: 100px;
+}
+
+.media-icons a{
+    color: #fff;
+    font-size: 2em;
+    margin: 60px;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 80px;
+}
+
+.info-title{
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.info{
+    width: 700px;
+    margin-left: 50px;
+}
+
+.media-info{
+    width: 400px;
+    margin-left: 50px;
+}
+
+.media-info li{
+    list-style: none;
+    font-size: 1.4em;
+}
+
+.media-info li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.media-info li:not(:last-child){
+    margin-bottom: 50px;
+}
+
+.media-info li:nth-child(1), .media-info li:nth-child(5){
+    padding-left: 100px;
+}
+
+.media-info li:nth-child(2), .media-info li:nth-child(4){
+    padding-left: 50px;
+}
+
+.container iframe{
+    
+    position: relative;
+    width: 100vh;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/* Swiper CSs */
+
+
+
+.swiper{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.swiper-container {
+    display: flex;
+    justify-content: center;
+  }
+
+.swiper-wrapper{
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    align-items: center;
+}
+
+.card{
+    width: 20em;
+    height: 70%;
+    background-color: #fff;
+    border-radius: 2em;
+    box-shadow: 0 0 2em rgba(0,0,0,0.2);
+    padding: 2em 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 2em;
+}
+/* 
+.swiper-slider:not(.swiper-slide-active) {
+    filter: blur(1px);
+} */
+
+.card_image{
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: 5px solid #9176ff;
+    padding: 3px;
+    margin-bottom: 2em;
+}
+
+.card_image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card_content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card_title{
+    font-size: 1.5em;
+    font-weight: 500;
+    position: relative;
+    top: .2em;
+}
+
+.card_name{
+    color: #9176ff;
+}
+
+.card_text{
+    text-align: center;
+    margin-top: 1.1em;
+    margin: 1em 0;
+}
+
+.card_btn{
+    background-color: #9176ff;
+    color:#fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    padding: .5em;
+    border-radius: .5em;
+    margin-top: .5em;
+    cursor: pointer;
+}
+
+/* Counter Up */
+
+.counter-up{
+    background: red;
+    min-height: 50vh;
+}
+
+.content-up .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.content-up .box{
+    width: calc(25% - 30px);
+    border: 1px dashed #fff;
+}

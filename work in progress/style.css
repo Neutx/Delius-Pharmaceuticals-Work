@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.swiper{
+    width: 100%;
+}
+
+.swiper-wrapper{
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    align-items: center;
+}
+
+.card{
+    width: 20em;
+    height: 70%;
+    background-color: #fff;
+    border-radius: 2em;
+    box-shadow: 0 0 2em rgba(0,0,0,0.2);
+    padding: 2em 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 2em;
+}
+
+/* .swiper-slider:not(.swiper-slide-active) {
+    filter: blur(1px);
+} */
+
+.card_image{
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: 5px solid #9176ff;
+    padding: 3px;
+    margin-bottom: 2em;
+}
+
+.card_image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card_content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card_title{
+    font-size: 1.5em;
+    font-weight: 500;
+    position: relative;
+    top: .2em;
+}
+
+.card_name{
+    color: #9176ff;
+}
+
+.card_text{
+    text-align: center;
+    margin-top: 1.1em;
+    margin: 1em 0;
+}
+
+.card_btn{
+    background-color: #9176ff;
+    color:#fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    padding: .5em;
+    border-radius: .5em;
+    margin-top: .5em;
+    cursor: pointer;
+}
+
+/* .card_btn:hover{
+    background-color: #7f7fd5;
+}
+
+.card_btn:focus{
+    outline: none;
+}
+
+.card_btn:active{
+    transform: scale(.95);
+}
+
+.card_btn:disabled{
+    background-color: #ccc;
+    color: #fff;
+    cursor: not-allowed;
+}   
+
+.card_btn:disabled:hover{
+    background-color: #ccc;
+}   
+
+.card_btn:disabled:focus{
+    outline: none;
+}   
+
+.card_btn:disabled:active{
+    transform: scale(.95);
+}   
+
+.card_btn:not(:disabled):active{
+    transform: scale(.95);
+}    */
