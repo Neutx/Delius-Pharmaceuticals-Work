@@ -13,6 +13,8 @@ body {
     background-color: #111222;
 }
 
+/*=============== Preloader ===============*/
+
 #video-container {
     display: block;
     position: fixed;
@@ -27,6 +29,9 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
+/*=============== Navbar ===============*/
+
 
 .header{
     position: fixed;
@@ -77,6 +82,7 @@ body {
     transform-origin: left; */
 }
 
+/*=============== Hero ===============*/
 
 
 section {
@@ -159,6 +165,8 @@ section {
     font-size: 3em;
     margin-bottom: 80px;
 }
+
+/*=============== Socials ===============*/
 
 .info-title {
     font-size: 1.8em;
