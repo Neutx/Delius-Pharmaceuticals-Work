@@ -28,7 +28,10 @@ body {
     background-color: #fff;
 }
 
+
+
 .home {
+    font-stretch: 65%;
     min-height: 100vh;
     padding: 10rem 9% 2rem;
     font-size: 62.5%;
