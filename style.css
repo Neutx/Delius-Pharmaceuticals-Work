@@ -147,21 +147,15 @@ span{
 
 /*=============== Preloader ===============*/
 
-#video-container {
-    display: block;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 9999;
-}
-
-#my-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
+#video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 9999;
+} 
 /*=============== Navbar ===============*/
 
 
@@ -218,7 +212,7 @@ span{
 
 /*=============== Hero ===============*/
 
-section:nth-child(odd) {
+section:nth-child(even) {
     background: #F8F6F4;
 }
 
