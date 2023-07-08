@@ -38,30 +38,21 @@
 
   <body>
     <!--===== Video Preloader =====-->
-
-    <video preload="auto" id="video" autoplay muted>
-      <source src="./Video/main_animation.mp4" type="video/mp4">
-      <!-- Add additional source elements for different video formats if needed -->
-      <!-- <source src="path/to/video.webm" type="video/webm"> -->
-      <!-- <source src="path/to/video.ogg" type="video/ogg"> -->
-      Your browser does not support the video tag.
-    </video>
+    <div id="video-container">
+      <video id="my-video" autoplay muted>
+        <source src="Video/main_animation.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
   
     <script>
-      // Add an event listener to trigger when the video can play through
-      document.getElementById('video').addEventListener('canplaythrough', function() {
-        // Show the body content once the video can play through
-        document.body.style.visibility = 'visible';
-      });
-      
-      // Add an event listener to trigger when the video has ended
-      document.getElementById('video').addEventListener('ended', function() {
-        // Remove the video element
-        this.parentNode.removeChild(this);
-        
-        // Restore the overflow of the body to display the website content
-        document.body.style.overflow = 'auto';
-      });
+      document.body.style.overflow = "hidden";
+      let video = document.getElementById("my-video");
+      video.onended = function () {
+        let videoContainer = document.getElementById("video-container");
+        videoContainer.style.display = "none";
+        document.body.style.overflowY = "scroll";
+      };
     </script>
   
     <!--===== Navbar =====-->
