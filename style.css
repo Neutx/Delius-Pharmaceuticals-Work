@@ -55,6 +55,9 @@ body {
 
 
 .home {
+    background-image: url('./images/building.png');
+    background-size: cover;
+    background-position: center;
     min-height: 100vh;
     padding: 10rem 9% 2rem;
     font-size: 62.5%;
@@ -82,12 +85,13 @@ body {
 
 
 .home-content h3{
+    text-align: center;
     font-size: 2.6rem;
     font-weight: 700;
 }
 
 .home-content h3:nth-of-type(2) {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
 }
 
 span{
@@ -102,6 +106,7 @@ span{
 
 
 .home-content p{
+    margin:  1.5rem 1.5rem 2rem 0;
     font-size: 1.6rem;
 
 }
@@ -117,7 +122,7 @@ span{
     border: .2rem solid #49a244;
     font-size: 1.5rem;
     color: #49a244;
-    margin: 2rem 1.5rem 2rem 0;
+    margin: 0 1.5rem 2rem 0;
     transition: .5s ease;
 }
 
@@ -181,11 +186,16 @@ span{
 }
 
 .logo {
-    font-size: 32px;
-    color: #000;
-    text-decoration: none;
-    font-weight: 700;
+    display: inline-block;
 }
+
+.logo img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    animation: logoAnimation 2s infinite;
+}
+
 
 .navbar a {
     position: relative;
@@ -650,9 +660,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
 }
-body {
-  margin: 0;
-}
+
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
